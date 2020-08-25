@@ -6,7 +6,6 @@
     import asd from "../../utils/hackAsd/asd";
     import lightAppJssdkUtil from "../../utils/lightAppJssdk.util";
     import config from '../../utils/hackAsd/data'
-
     export default {
 
         mounted() {
