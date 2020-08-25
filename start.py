@@ -11,10 +11,11 @@ if __name__ == '__main__':
     parser.add_argument('--file', metavar='操作文件夹路径', type=str, help='source file')
     args = parser.parse_args()
     files = args.file
-    if not os.path.isdir(files):
-        print('error file format')
-        exit()
+    # if not os.path.isdir(files):
+    #     print('error file format')
+    #     exit()
     helper = Helper(files)
-    helper.ready_file()
+    # helper.ready_file()
+    helper.create_git_branch()
     # helper.rm_token_of_headers()
     pass
