@@ -9,7 +9,7 @@ class Helper:
 
     def ready_file(self):
         copyfile('./packages/preload.vue',  os.path.join(self.dir_path, 'src', 'views', 'preload.vue'))
-        copy_tree('./packages/hackAsd',  os.path.join(self.dir_path, 'src', 'utils/'))
+        copy_tree('./packages/hackAsd',  os.path.join(self.dir_path, 'src', 'utils/hackAsd/'))
 
     @staticmethod
     def rm_token_of_headers():
