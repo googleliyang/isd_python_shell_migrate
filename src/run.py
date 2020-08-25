@@ -11,7 +11,8 @@ class Helper:
         copyfile('./packages/preload.vue',  os.path.join(self.dir_path, 'src', 'views', 'preload.vue'))
         copy_tree('./packages/hackAsd',  os.path.join(self.dir_path, 'src', 'utils/'))
 
-    def rm_token_of_headers(self):
+    @staticmethod
+    def rm_token_of_headers():
         res = os.system('./filter.sh')
         print(res)
 
@@ -29,7 +30,6 @@ class Helper:
             if not i.find('->') > -1 and not i.find('*') > -1 and not i.find('master') > -1 and i != '':
                 branch_name = i.split('/')[-1]
                 print(branch_name)
-                # 切换分支，并基于分支创建新的爱山东分支
                 title = branch_name.split('-')[1]
                 print(title)
                 asd_branch_name = 'feature-asd-%s-dev1.0.0' % title
