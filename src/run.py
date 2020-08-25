@@ -17,7 +17,7 @@ class Helper:
         print(res)
 
     def update_http(self):
-        # 更新http 加签代码
+        # Update http sign method
         pass
 
     def create_git_branch(self):
@@ -33,7 +33,6 @@ class Helper:
                 title = branch_name.split('-')[1]
                 print(title)
                 asd_branch_name = 'feature-asd-%s-dev1.0.0' % title
-                # print('new branch name %s' % asd_branch_name)
                 g_res = subprocess.Popen('git checkout %s && git pull && git checkout -b %s' % (branch_name, asd_branch_name), shell=True, stdout=subprocess.PIPE, cwd=self.dir_path)
                 g_res.wait()
                 print(g_res.stdout.read())
