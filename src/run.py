@@ -14,3 +14,7 @@ class Helper:
     def rm_token_of_headers(self):
         res = os.system('./filter.sh')
         print(res)
+
+    def update_http(self):
+        # 更新http 加签代码
+        pass

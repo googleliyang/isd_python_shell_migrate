@@ -16,6 +16,5 @@ if __name__ == '__main__':
         exit()
     helper = Helper(files)
     helper.ready_file()
-    helper.rm_token_of_headers()
-    print(files)
+    # helper.rm_token_of_headers()
     pass
